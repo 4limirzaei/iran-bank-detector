@@ -1,0 +1,62 @@
+{
+  "name": "iran-bank-detector",
+  "version": "0.0.2",
+  "description": "Detect Iranian bank information from a card number.",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "test",
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4limirzaei/iran-bank-detector.git"
+  },
+  "keywords": [
+    "bank",
+    "iran",
+    "card",
+    "bank detector",
+    "bin lookup",
+    "iranian banks",
+    "persian banks",
+    "card2bank",
+    "credit card",
+    "debit card",
+    "شماره کارت",
+    "بانک",
+    "اطلاعات بانک"
+  ],
+  "author": "Ali Mirzaei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4limirzaei/iran-bank-detector/issues"
+  },
+  "homepage": "https://github.com/4limirzaei/iran-bank-detector#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "react": "^19.1.0",
+    "rollup": "^4.39.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.1.0",
+    "react-dom": "^18.0.0 || ^19.1.0"
+  },
+  "dependencies": {
+    "@types/react": "^18"
+  }
+}
