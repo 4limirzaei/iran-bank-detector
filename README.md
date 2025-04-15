@@ -45,6 +45,10 @@ console.log(bank?.bankName); // "ملت"
 
 Bank logos are served via a **CDN** to avoid the need for users to download or upload the files themselves. You can fetch the logos from the CDN links provided in return **logo** field.
 
+## 📐 Recommended Logo Size
+
+To ensure optimal display quality, we recommend using logos with a **maximum size of 72x72 pixels**.
+
 ## ⚙️ Configuration for Next.js
 
 If you're using this package in a Next.js project, you will need to update your next.config.js file to allow loading images from the CDN. Add the following configuration:
