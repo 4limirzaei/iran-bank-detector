@@ -1,6 +1,6 @@
 {
   "name": "iran-bank-detector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Detect Iranian bank information from a card number.",
   "files": [
     "dist",
@@ -56,5 +56,8 @@
   "peerDependencies": {
     "react": "^18.0.0 || ^19.1.0",
     "react-dom": "^18.0.0 || ^19.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
