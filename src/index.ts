@@ -20,8 +20,13 @@ function attachLogoPath(bank: BankInfo): BankInfo {
   };
 }
 
+function cleanIBanCode(code: string): string {
+  return code.trim().replace(/^ir/i, "");
+}
+
 export function getBankByIBanCode(iBan: string): BankInfo | null {
-  const bank = banksList.find((item) => iBan.startsWith(item.iBan));
+  const cleanedCode = cleanIBanCode(iBan);
+  const bank = banksList.find((item) => cleanedCode.startsWith(item.iBan));
   return bank ? attachLogoPath(bank) : null;
 }
 

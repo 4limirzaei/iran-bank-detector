@@ -1,6 +1,6 @@
 {
   "name": "iran-bank-detector",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Detect Iranian bank information from a card number.",
   "files": [
     "dist",
