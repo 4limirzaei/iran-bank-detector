@@ -1,0 +1,30 @@
+name: Publish Package to NPM
+
+on:
+  push:
+    branches:
+      - main  # اینجا می‌تونی تغییر بدی به برنچ مورد نظرت
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.12.2'
+        registry-url: 'https://registry.npmjs.org'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Rollup
+      run: npm run rollup
+    
+    - name: Publish to NPM
+      run: npm publish --access public  # برای پابلیش کردن پکیج به npm
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
