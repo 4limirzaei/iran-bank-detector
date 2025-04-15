@@ -22,15 +22,16 @@ jobs:
         id: check
         run: |
           CURRENT_VERSION=$(jq -r .version package.json)
-          LATEST_TEG=$(git describe --tags --abbrev=0  2>\dev/null || echo "v0.0.0")
+          LATEST_TEG=$(git describe --tags --abbrev=0  2>/dev/null || echo "v0.0.0")
           # Remove 'v' prefix from the tag for version comparison
           echo "Latest tag: $LATEST_TEG"
+
           LATEST_VERSION=${LATEST_TEG#v}
 
           echo "Current version: $CURRENT_VERSION"
           echo "Latest tag version: $LATEST_VERSION"
 
-          if [ "$LATEST_VERSION" != "$CURRENT_VERSION"]; then
+          if [ "$LATEST_VERSION" != "$CURRENT_VERSION" ]; then
             echo "version_changed=true" >> $GITHUB_OUTPUT
             echo "new_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
             echo "Version changed from $LATEST_VERSION to $CURRENT_VERSION"
