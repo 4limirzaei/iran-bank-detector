@@ -11,7 +11,7 @@ type BankInfo = {
 };
 
 const BASE_LOGO_URL =
-  "https://cdn.jsdelivr.net/gh/4limirzaei/iran-bank-assets/tree/main/logos/";
+  "https://cdn.jsdelivr.net/gh/4limirzaei/iran-bank-assets/logos/";
 
 function attachLogoPath(bank: BankInfo): BankInfo {
   return {
