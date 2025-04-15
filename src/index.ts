@@ -26,7 +26,9 @@ function cleanIBanCode(code: string): string {
 
 export function getBankByIBanCode(iBan: string): BankInfo | null {
   const cleanedCode = cleanIBanCode(iBan);
-  const bank = banksList.find((item) => cleanedCode.startsWith(item.iBan));
+  const bank = banksList.find(
+    (item) => item.iBan && cleanedCode.startsWith(item.iBan)
+  );
   return bank ? attachLogoPath(bank) : null;
 }
 

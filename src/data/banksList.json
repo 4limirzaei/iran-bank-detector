@@ -164,7 +164,7 @@
   {
     "id": "ic_nor",
     "bankName": "نور",
-    "iBan": "",
+    "iBan": "080",
     "prefixes": ["507677"],
     "logo": "ic_nor.png",
     "bgColor": "#CDF2F2",
@@ -245,7 +245,7 @@
   {
     "id": "ic_resalat",
     "bankName": "قرض الحسنه رسالت",
-    "iBan": "",
+    "iBan": "070",
     "prefixes": ["504172"],
     "logo": "ic_resalat.png",
     "bgColor": "#CCF6FD",
@@ -263,7 +263,7 @@
   {
     "id": "ic_khavarmiyane",
     "bankName": "خاورميانه",
-    "iBan": "",
+    "iBan": "078",
     "prefixes": ["505809", "585947"],
     "logo": "ic_khavarmiyane.png",
     "bgColor": "#FFEDD7",
@@ -281,7 +281,7 @@
   {
     "id": "ic_venezuela",
     "bankName": "ايران ونزوئلا",
-    "iBan": "",
+    "iBan": "095",
     "prefixes": ["581874"],
     "logo": "ic_venezuela.png",
     "bgColor": "#FFE5B2",
