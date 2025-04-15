@@ -25,7 +25,7 @@ To retrieve bank information by IBan, simply pass the IBan number to the **getBa
 ```ts
 import { getBankByIBanCode } from "iran-bank-detector";
 
-const bank = getBankByIBanCode("IR012");
+const bank = getBankByIBanCode("IR36012");
 
 console.log(bank?.bankName); // "ملت"
 ```
