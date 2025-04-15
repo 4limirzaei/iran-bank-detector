@@ -21,7 +21,7 @@ function attachLogoPath(bank: BankInfo): BankInfo {
 }
 
 function cleanIBanCode(code: string): string {
-  return code.trim().replace(/^ir/i, "");
+  return code.trim().replace(/^ir/i, "").replace(/^.{2}/, "");
 }
 
 export function getBankByIBanCode(iBan: string): BankInfo | null {
