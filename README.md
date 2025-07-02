@@ -28,6 +28,9 @@ import { getBankByIBanCode } from "iran-bank-detector";
 const bank = getBankByIBanCode("IR36012");
 
 console.log(bank?.bankName); // "ملت"
+console.log(bank?.logo); // ".png file URL"
+console.log(bank?.bgColor); // "#FFE2E3"
+console.log(bank?.textColor); // "#800005"
 ```
 
 **2. Using Card Prefix**
@@ -39,6 +42,9 @@ import { getBankByCardNumber } from "iran-bank-detector";
 const bank = getBankByCardNumber("6104331234567890");
 
 console.log(bank?.bankName); // "ملت"
+console.log(bank?.logo); // ".png file URL"
+console.log(bank?.bgColor); // "#FFE2E3"
+console.log(bank?.textColor); // "#800005"
 ```
 
 ## 🌐 CDN Support
