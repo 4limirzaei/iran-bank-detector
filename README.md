@@ -2,6 +2,8 @@
 
 This package is designed to find **Iranian bank information** based on **IBan Numbers** and **Card Prefixes**. Users can input either an IBan number or a card prefix to retrieve the related bank information (such as bank name, logo, and related colors).
 
+![preview](https://cdn.jsdelivr.net/gh/4limirzaei/iran-bank-assets/preview/preview.png)
+
 ## ✨ Features
 
 - 📑 Identify banks by **IBan Number**
